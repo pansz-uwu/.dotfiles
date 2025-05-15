@@ -1,0 +1,132 @@
+:root {
+    --dark0: #161616;
+    --dark1: #202020;
+    --dark2: #383838;
+    --dark3: #505050;
+    --dark4: #5f5f5f;
+    --dark5: #1c1c1c;
+    
+    --gray: #919191;
+    
+    --light0: #ffffff;
+    --light1: #e9e9e9;
+    --light2: #c9c9c9;
+    --light3: #a5a5a5;
+    --light4: #888888;
+    
+    --red: #d83a41;
+    --green: #40a258;
+    --yellow: #d0ff00;
+    --blue: #458588;
+    --purple: #9147ff;
+    --aqua: #689d6a;
+    --orange: #d65d0e;
+    --white: #ffffff;
+
+    /* text colors */
+    --text-0: var(--light0); /* text on colored elements */
+    --text-1: var(--light1); /* other normally white text */
+    --text-2: var(--light2); /* headings and important text */
+    --text-3: var(--light3); /* normal text */
+    --text-4: var(--light4); /* icon buttons and channels */
+    --text-5: var(--gray); /* muted channels/chats and timestamps */
+
+    --bg-4: #202020; /* main background  color */
+    --hover: rgba(34, 34, 34, 0.1); /* channels and buttons when hovered */
+    --active: rgba(14, 14, 14, 0.5); /* channels and buttons when clicked or selected */
+    --active-2: rgba(22, 22, 22, 0.5); /* extra state for transparent buttons */
+    
+    --dark-theme-divider-color: #000 !important;
+    --divider-color: #000 !important;
+}
+
+* {
+    font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+    border-radius: 0px !important; /* Remove todos os cantos arredondados */
+    box-shadow: none !important;  /* Remove sombras */
+}
+
+#nav-bar-background {
+    background-color: var(--dark1) !important;
+}
+
+img.logo.style-scope.ytmusic-logo {
+    display: none !important;
+}
+
+ytmusic-logo {
+    display: flex !important;
+    align-items: center !important; /* Centraliza verticalmente */
+    justify-content: center !important; /* Opcional, para centralizar horizontalmente também */
+    height: 100% !important; /* Garante que o logo ocupe a altura total */
+}
+
+ytmusic-logo::after {
+    content: ">///<" !important;
+    color: var(--light1) !important;
+    font-family: monospace !important;
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+}
+
+ytmusic-player-page {
+    padding-left: 2px !important;
+    background-color: #5e5e5e82 !important;
+    box-sizing: border-box !important;
+}
+
+body, ytmusic-app, ytmusic-nav-bar, ytmusic-player-bar {
+    background-color: var(--dark1) !important;
+    color: var(--light1) !important;
+}
+
+button, paper-icon-button, yt-icon, a, h1, h2, h3, h4, h5, span, div {
+    color: var(--light1) !important;
+    fill: var(--light1) !important;
+    border-radius: 0px !important;
+}
+
+ytmusic-guide-renderer {
+    background-color: var(--dark1) !important;
+    color: var(--light1) !important;
+}
+
+ytmusic-section-list-renderer {
+    background-color: var(--dark5) !important;
+}
+
+.ytmusic-player-page {
+    background-color: var(--dark1) !important;
+}
+
+/* Barra de progresso do player */
+.progress-bar {
+    background-color: #333 !important;
+    height: 4px !important;
+}
+
+.progress-bar::after {
+    background-color: var(--light1) !important;
+    height: 100% !important;
+}
+
+tp-yt-paper-slider, tp-yt-paper-progress {
+    --paper-slider-knob-color: var(--light1) !important;
+    --paper-slider-secondary-color: var(dark4) !important;
+    --paper-progress-active-color: var(--light1) !important;
+}
+
+ytmusic-thumbnail-renderer img {
+    content: url("https://i.pinimg.com/736x/3a/7a/e9/3a7ae9e8d97943d80a6fc27ee0cc0e13.jpg") !important;
+    object-fit: cover !important;
+}
+
+.style-scope.ytmusic-player-page yt-img-shadow img {
+    content: url("https://i.pinimg.com/736x/3a/7a/e9/3a7ae9e8d97943d80a6fc27ee0cc0e13.jpg") !important;
+    object-fit: cover !important;
+}
+
+.image.style-scope.ytmusic-player-bar {
+    content: url("https://i.pinimg.com/736x/3a/7a/e9/3a7ae9e8d97943d80a6fc27ee0cc0e13.jpg") !important;
+    object-fit: cover !important;
+}
